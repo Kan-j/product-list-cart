@@ -27,10 +27,6 @@ This project showcases a responsive web application featuring a product list wit
 - **ARIA Roles & Labels**: All elements include appropriate ARIA attributes to support assistive technologies.
 - **Keyboard Navigation**: Full keyboard accessibility for all interactive components ensures usability for all users.
 
-### 5. Bonus Features (Optional)
-
-- **Search Bar**: Filter products by name or category for easier navigation.
-- **Checkout Process**: Includes a basic checkout form with client-side validation.
 
 ---
 
@@ -78,7 +74,6 @@ This project showcases a responsive web application featuring a product list wit
 2. Click on a product to view details.
 3. Add products to the cart.
 4. Manage the cart by adding/removing items and viewing the total price.
-5. (Optional) Use the search bar to filter products or proceed to the checkout process.
 
 ---
 
@@ -90,31 +85,5 @@ This project showcases a responsive web application featuring a product list wit
 
 ---
 
-## Future Enhancements
 
-- Integration with a backend API for real-time product data and order processing.
-- Persistent cart functionality using local storage or server-side storage.
-- Advanced search and filtering options.
-
----
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
-
-## Acknowledgments
-
-Special thanks to everyone who provided feedback and resources for this project.
-
----
-
-## Contact
-
-For questions or feedback, feel free to contact:
-
-- **Name**: [Your Name]
-- **Email**: [Your Email]
-- **GitHub**: [Your GitHub Profile](#)
 
