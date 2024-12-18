@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: hsl(20, 50%, 98%);
+    width: 100%;
+  }
+  .container {
+    width: 80%;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .container .shopCart {
+    height: fit-content;
+    width: 330px;
+    min-height: 300px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .container .shopCart .mycart {
+    height: 100%;
+  }
+  .container .shopCart .mycart .cont {
+    overflow-y: scroll;
+    height: 200px;
+  }
+  .container .shopCart .mycart .money {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  .container .shopCart .mycart .money .dollar {
+    color: black;
+  }
+  .container .shopCart .mycart .carbon {
+    background-color: hsl(20, 50%, 98%);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  .container .shopCart .mycart button {
+    background-color: hsl(14, 86%, 42%);
+    color: white;
+    margin-top: 10px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 1s;
+  }
+  .container .shopCart .mycart button:hover {
+    background-color: hsl(14, 79%, 30%);
+  }
+  .container .shopCart .illustrate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .container .shopCart .illustrate b {
+    color: hsl(14, 25%, 72%);
+  }
+  .container .shopCart h2 {
+    color: hsl(14, 86%, 42%);
+  }
+  .container ul {
+    margin-top: 20px;
+    line-height: 30px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+  .container ul li {
+    list-style-type: none;
+  }
+  .container ul li .image img {
+    width: 100%;
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  .container ul li .name {
+    color: hsl(14, 25%, 72%);
+  }
+  .container ul li .price {
+    color: hsl(14, 86%, 42%);
+  }
+  .container ul li .image {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .container ul li .image .addCart {
+    position: absolute;
+    top: 87%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    padding: 5px 0px;
+    border-radius: 20px;
+    border: 2px solid hsl(14, 86%, 42%);
+    background-color: white;
+  }
+  .container ul li .image .addButton {
+    position: absolute;
+    top: 87%;
+    cursor: pointer;
+    display: none;
+    justify-content: space-around;
+    width: 150px;
+    padding: 5px 0px;
+    border-radius: 20px;
+    border: 2px solid hsl(14, 86%, 42%);
+    background-color: hsl(14, 86%, 42%);
+    font-size: 20px;
+  }
+  .container ul li .image .addButton button {
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background: none;
+    color: white;
+    width: 30px;
+    height: 30px;
+    transition: 1s;
+  }
+  .container ul li .image .addButton button:hover {
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background: white;
+    color: hsl(14, 86%, 42%);
+    width: 30px;
+    height: 30px;
+  }
+  .container ul li .image .addButton p {
+    color: white;
+  }
+  .container ul li .image .addCart img {
+    width: 20px;
+    margin-right: 5px;
+  }
+  .container .shopCart .mycart .list {
+    border-bottom: 1px solid hsl(14, 25%, 72%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 30px;
+  }
+  .container .shopCart .mycart .list img {
+    border: 1px solid hsl(14, 25%, 72%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .container .shopCart .mycart .list .name .cart {
+    font-weight: bold;
+    color: hsl(14, 86%, 42%);
+  }
+  .container .shopCart .mycart .list .name .price {
+    color: hsl(14, 25%, 72%);
+  }
+  .container .shopCart .mycart .list .name .total {
+    font-weight: bold;
+    color: hsl(15, 16%, 54%);
+  }
+  .popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  .popup .popCont {
+    width: 50%;
+    min-width: 300px;
+    max-width: 500px;
+    background-color: white;
+    padding: 20px;
+    height: fit-content;
+    border-radius: 20px;
+    z-index: 100;
+  }
+  .popup .popCont .product {
+    margin-top: 10px;
+    background: hsl(20, 50%, 98%);
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .popup .popCont .product .products {
+    overflow-y: scroll;
+    height: fit-content;
+    max-height: 300px;
+  }
+  .popup .popCont .product .money {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  .popup .popCont .product .Plist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid hsl(14, 25%, 72%);
+  }
+  .popup .popCont .product .Plist img {
+    width: 50px;
+    height: 100%;
+    margin: 10px;
+    border-radius: 7px;
+  }
+  .popup .popCont img {
+    width: 35px;
+    height: 35px;
+  }
+  .popup .popCont .product .Plist .name {
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    line-height: 30px;
+  }
+  .popup .popCont .product .Plist .name .cart {
+    font-weight: bold;
+    color: hsl(14, 86%, 42%);
+  }
+  .popup .popCont .product .Plist .name .price {
+    color: hsl(14, 25%, 72%);
+  }
+  .popup .popCont .product .Plist .name .total {
+    font-weight: bold;
+    color: black;
+  }
+
+  .popup .popCont .product button {
+    background-color: hsl(14, 86%, 42%);
+    color: white;
+    margin-top: 10px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 1s;
+  }
+  .popup .popCont .product button:hover {
+    background-color: hsl(14, 79%, 30%);
+  }
+  @media screen and (max-width: 1000px) {
+    .container ul {
+      margin-top: 20px;
+      line-height: 30px;
+      display: grid;
+      grid-template-columns: 200px 200px;
+      column-gap: 20px;
+      row-gap: 20px;
+    }
+    .container {
+      width: 80%;
+      padding: 20px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    .popup .popCont {
+      width: 95%;
+    }
+    .container .shopCart .mycart button {
+      background-color: hsl(14, 86%, 42%);
+      color: white;
+      margin-top: 10px;
+      width: 100%;
+      padding: 15px;
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      transition: 1s;
+    }
+    .popup .popCont .product button {
+      background-color: hsl(14, 86%, 42%);
+      color: white;
+      margin-top: 10px;
+      width: 100%;
+      padding: 15px;
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      transition: 1s;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .popup .popCont {
+      width: 95%;
+    }
+    .container ul {
+      margin-top: 20px;
+      line-height: 30px;
+      display: grid;
+      grid-template-columns: auto;
+      column-gap: 20px;
+      row-gap: 20px;
+    }
+    .container {
+      width: 80%;
+      padding: 20px;
+      margin: auto;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+    }
+    .container .shopCart .mycart button {
+      background-color: hsl(14, 86%, 42%);
+      color: white;
+      margin-top: 10px;
+      width: 100%;
+      padding: 15px;
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      transition: 1s;
+    }
+    .popup .popCont .product button {
+      background-color: hsl(14, 86%, 42%);
+      color: white;
+      margin-top: 10px;
+      width: 100%;
+      padding: 15px;
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      transition: 1s;
+    }
+  }

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product list with cart</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="popup" id="pop">
+      <div class="popCont">
+        <img src="assets/images/icon-order-confirmed.svg" alt="" />
+        <h1>Order Confirmed</h1>
+        <p>we hope you enjoy your food!</p>
+        <div class="product">
+          <div class="products" id="product"></div>
+          <div class="money">
+            <span>Order Total</span>
+            <h2 class="dollar">$<span id="moneyCont2">0</span></h2>
+          </div>
+          <button id="new">Start New Order</button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="items">
+        <h1>Dessert</h1>
+        <ul id="ul"></ul>
+      </div>
+      <div class="shopCart">
+        <h2>Your Cart (<span id="yourCart">0</span>)</h2>
+        <div class="illustrate">
+          <img src="assets/images/illustration-empty-cart.svg" alt="" />
+          <b>Your added items will appear here</b>
+        </div>
+        <div class="mycart" id="summarize">
+          <div class="cont" id="myCartCont"></div>
+          <div class="money">
+            <span>Order Total</span>
+            <h2 class="dollar">$<span id="moneyCont">0</span></h2>
+          </div>
+          <div class="carbon">
+            <img src="../assets/images/icon-carbon-neutral.svg" alt="" />
+            &nbsp; &nbsp;
+            <span>This is a <b>carbon-neutral</b> delivery</span>
+          </div>
+          <button id="confirm">Confirm Order</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
