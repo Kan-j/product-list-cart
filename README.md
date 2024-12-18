@@ -34,8 +34,8 @@ This project showcases a responsive web application featuring a product list wit
 
 1. **Web Application**: A fully functional and responsive web application.
 2. **Code**: Clean, modular, and well-documented codebase.
-3. **Hosted Application**: [URL to the live application](#)
-4. **GitHub Repository**: [URL to the repository](#)
+3. **Hosted Application**: [[URL to the live application](https://product-list-cart-lime.vercel.app)
+4. **GitHub Repository**: [URL to the repository](https://github.com/Kan-j/product-list-car)
 
 ---
 
